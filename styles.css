@@ -1,0 +1,108 @@
+/* styles.css */
+
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* dark gray background */
+    color: #fff; /* white text */
+    transition: background-color 0.5s; /* add a transition effect to the background color */
+}
+
+/* Container Styles */
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #f7f7f7; /* light gray background */
+    padding: 20px;
+    border: 1px solid #ddd; /* light gray border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    transition: box-shadow 0.5s; /* add a transition effect to the box shadow */
+}
+
+/* Header Styles */
+
+header {
+    background-color: #212121; /* dark gray background */
+    color: #fff; /* white text */
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* light gray border */
+}
+
+header h1 {
+    margin: 0;
+    color: #fff; /* white text */
+    animation: fade-in 2s; /* add a fade-in animation to the header text */
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Main Styles */
+
+main {
+    padding: 20px;
+    background-color: #f2f2f2; /* light gray background */
+}
+
+/* Image Container Styles */
+
+.image-container {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #fff; /* white background */
+    padding: 10px;
+    border: 1px solid #ddd; /* light gray border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    overflow: hidden; /* add this to ensure the image is not cut off */
+    transition: transform 0.5s; /* add a transition effect to the image container */
+}
+
+.image-container:hover {
+    transform: scale(1.1); /* add a hover effect to the image container */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    display: block; /* add this to ensure the image is displayed correctly */
+    margin: 0 auto; /* add this to center the image horizontally */
+    animation: fade-in 2s; /* add a fade-in animation to the image */
+}
+
+/* Paragraph Styles */
+
+p {
+    margin-bottom: 10px;
+    color: #333; /* dark gray text */
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #212121; /* dark gray background */
+    color: #fff; /* white text */
+    padding: 10px;
+    border-top: 1px solid #ddd; /* light gray border */
+    clear: both;
+    animation: slide-up 2s; /* add a slide-up animation to the footer */
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
